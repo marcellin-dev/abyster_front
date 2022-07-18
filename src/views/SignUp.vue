@@ -3,7 +3,7 @@
     <h1 class="">
       <div class="row justify-content-center">
         <div class="col-6 shadow p-4 mt-5">
-          <small>inscrivez vous ici</small>
+          <small class="my-4">inscrivez vous ici</small>
 
           <br />
           <form @submit="signup">
@@ -85,7 +85,7 @@ export default {
     checkUser() {
       let user = JSON.parse(localStorage.getItem("user"));
 
-      if (user.token) {
+      if (user && user?.token) {
         console.log("user -- ", user);
         this.$router.push({ name: "home" });
       } else this.$router.push({ name: "login" });

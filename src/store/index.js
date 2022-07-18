@@ -7,7 +7,7 @@ import axios from "axios";
 
 Vue.use(Vuex);
 
-axios.defaults.baseURL = "http://localhost:5001/api/";
+axios.defaults.baseURL = "https://abysterback.herokuapp.com/api/";
 
 export default new Vuex.Store({
   state: {},
