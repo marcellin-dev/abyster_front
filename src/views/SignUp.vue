@@ -88,7 +88,7 @@ export default {
       if (user && user?.token) {
         console.log("user -- ", user);
         this.$router.push({ name: "home" });
-      } else this.$router.push({ name: "login" });
+      }
     },
   },
 
